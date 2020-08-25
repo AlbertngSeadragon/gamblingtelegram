@@ -45,13 +45,13 @@ function jockyclubAPI() {
 async function main() {
     //console.log(await jockyclubRaw)
     let rawMacuse =  await parse(await MacauseAPI())
-    console.log(rawMacuse)
+    //console.log(rawMacuse.Fixtures.Fixture)
     // xmlTojson(raw, function (err, result) {
     //     //console.dir(result);
     console.log('\n')
     // });
     let raw = await jockyclubAPI()
-    console.log(raw)
+    console.log(raw[1].matches)
 }
 
 main()
